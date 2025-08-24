@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made-by Hasan – Luxury Mehendi Artist</title>
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fff8f0;
+            color: #2c2c2c;
+            scroll-behavior: smooth;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #7a1b3a, #d4a373);
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            background-attachment: fixed;
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin-bottom: 15px;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4a373, #b67a2a);
+            color: white;
+            padding: 14px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin: 8px;
+            font-weight: 600;
+            transition: all 0.4s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* NAV */
+        nav {
+            background: #2c2c2c;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4a373;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 35px;
+            color: #7a1b3a;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        /* SERVICES */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .service-card h3 {
+            color: #d4a373;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+
+        .service-card p {
+            font-size: 1.05em;
+        }
+
+        /* BOOKING */
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        form button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #d4a373, #b67a2a);
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            transform: scale(1.05);
+        }
+
+        /* CONTACT */
+        .contact p {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 12px 0;
+        }
+
+        footer {
+            background: #2c2c2c;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            font-size: 0.95em;
+        }
+
+        /* FLOATING WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            background: #25d366;
+            color: white;
+            font-size: 26px;
+            padding: 16px 20px;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+            z-index: 200;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.15);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>hennah.artistezx</h1>
+        <p>Luxury Mehendi / Mehendi Artist</p>
+        <a href="https://wa.me/918528160600" class="btn">📲 Book on WhatsApp</a>
+        <a href="https://instagram.com/hennah.artistezx" class="btn">📸 Follow on Instagram</a>
+    </header>
+
+    <nav>
+        <a href="#gallery">Gallery</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="gallery">
+        <h2>My Mehendi Work</h2>
+        <div class="gallery">
+            <img src="ipg2.jpg" alt="Design 1">
+            <img src="ipg3.jpg" alt="Design 2">
+            <img src="ipg4.jpg" alt="Design 3">
+            <img src="ipg5.jpg" alt="Design 4">
+            <img src="ipg6.jpg" alt="Design 5">
+            <img src="ipg1.jpg" alt="Design 6">
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Services & Packages</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>👰 Bridal Mehendi</h3>
+                <p>Full hands & feet with intricate luxury designs.</p>
+                <p><b>₹4,999</b></p>
+            </div>
+            <div class="service-card">
+                <h3>🎉 Party Mehendi</h3>
+                <p>Trendy & stylish designs for parties & events.</p>
+                <p><b>From ₹499</b></p>
+            </div>
+            <div class="service-card">
+                <h3>🌸 Festival Mehendi</h3>
+                <p>Special designs for Eid, Karva Chauth, Diwali & more.</p>
+                <p><b>From ₹299</b></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Booking Form</h2>
+        <form id="bookingForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="date" placeholder="Event Date" required>
+            <input type="text" id="location" placeholder="Event Location" required>
+            <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Booking via WhatsApp</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact">
+            <p>📲 WhatsApp: <a href="https://wa.me/918528160600">+91 85281 60600</a></p>
+            <p>📸 Instagram: <a href="https://instagram.com/hennah.artistezx">@hennah.artistezx</a></p>
+            <p>📍 Available for bookings across Lucknow</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made-by Hasan – Luxury Mehendi Artist | All Rights Reserved</p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918528160600" class="whatsapp-float">💬</a>
+
+    <!-- JS for Booking -->
+    <script>
+        document.getElementById("bookingForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            let name = document.getElementById("name").value;
+            let date = document.getElementById("date").value;
+            let location = document.getElementById("location").value;
+            let message = document.getElementById("message").value;
+
+            let url = "https://wa.me/918528160600?text="
+                + "Hello, I want to book a mehndi session.%0A"
+                + "*Name:* " + name + "%0A"
+                + "*Date:* " + date + "%0A"
+                + "*Location:* " + location + "%0A"
+                + "*Message:* " + message;
+
+            window.open(url, "_blank");
+        });
+    </script>
+</body>
+
+</html>
